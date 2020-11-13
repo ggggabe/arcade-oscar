@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: 'flex';
+}
+
+body {
+  background-color: #900F90;
+  color: #FFF9F3;
+}
