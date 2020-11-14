@@ -1,1 +1,1 @@
-export const Splash = () => {}
+export * from './Splash'

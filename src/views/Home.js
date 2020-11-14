@@ -11,7 +11,8 @@ export const Home = () => {
   <h2> Home </h2>
   <ul>
   <li>
-  <Link to="/bps"> Boulder Parchment Shears </Link>
+  <Link to="/rps"> Rock Paper Scissors </Link>
+  <Link to="/splash"> OSCAR </Link>
   </li>
   </ul>
   </div>

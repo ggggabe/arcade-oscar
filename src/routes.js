@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {
-  Bps,
+  Rps,
   Home,
 } from './views'
 
@@ -25,9 +25,8 @@ export const Routes = () =>
     <Route exact path="/splash">
       <Splash />
     </Route>
-
-    <Route path="/bps">
-      <Bps />
+    <Route path="/rps">
+      <Rps />
     </Route>
 
   </Switch>

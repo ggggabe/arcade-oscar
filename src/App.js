@@ -1,5 +1,5 @@
-import Splash from './scenes/Splash'
 import {Routes} from './routes'
+import './index.scss'
 
 function App() {
   return (
@@ -11,7 +11,6 @@ function App() {
       alignItems: 'center',
       flexFlow: 'column wrap',
     }}>
-      <Splash />
       <Routes />
     </div>
   )

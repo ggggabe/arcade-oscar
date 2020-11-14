@@ -68,7 +68,7 @@ const Layout = () => {
       <Box dir="row" width="100%" height="100%" align="center" justify="center">
         <Box centerAnchor>
           <WowText>
-            OSCAR
+            Boulder Parchment Shears
           </WowText>
         </Box>
       </Box>
@@ -76,7 +76,7 @@ const Layout = () => {
   )
 }
 
-export const Splash = () => {
+export const BpsSplash = () => {
   return <Canvas gl={{ antialias: true }} camera={{fov: 90 }}>
     <Layout />
   </Canvas>
