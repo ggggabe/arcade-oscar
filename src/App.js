@@ -1,11 +1,7 @@
-
 import Splash from './scenes/Splash'
 import {Routes} from './routes'
 
-
 function App() {
-
-
   return (
     <div style={{
       display: 'flex',
@@ -15,10 +11,8 @@ function App() {
       alignItems: 'center',
       flexFlow: 'column wrap',
     }}>
-
       <Splash />
       <Routes />
-
     </div>
   )
 }
