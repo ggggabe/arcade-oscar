@@ -1,4 +1,7 @@
+
 import Splash from './scenes/Splash'
+import {Routes} from './routes'
+
 
 function App() {
 
@@ -9,8 +12,13 @@ function App() {
       height: '100vh',
       width: '100vw',
       justifyContent: 'center',
+      alignItems: 'center',
+      flexFlow: 'column wrap',
     }}>
+
       <Splash />
+      <Routes />
+
     </div>
   )
 }
