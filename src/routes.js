@@ -6,6 +6,10 @@ import {
 } from './views'
 
 import {
+  Splash,
+} from './scenes'
+
+import {
   BrowserRouter as Router,
   Switch,
   Route,
@@ -17,6 +21,9 @@ export const Routes = () =>
 
     <Route exact path="/">
       <Home />
+    </Route>
+    <Route exact path="/splash">
+      <Splash />
     </Route>
 
     <Route path="/bps">
