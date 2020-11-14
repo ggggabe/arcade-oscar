@@ -8,7 +8,3 @@ The following packages are responsible for the force flag. Problem for a later d
 - three
 - @react-three/flex
 - threejs-meshline
-
-# Tiddy Sprinklez
-
-## `sprinklez of tiddy`
