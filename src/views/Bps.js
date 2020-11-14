@@ -5,24 +5,29 @@ import {
 } from 'react-router-dom'
 
 export const Bps = () =>(
-  <div style={{
-    display: 'flex',
-    width: '100vw',
+<>
+  <div className='header' style={{
+    display:'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    textAlign: 'center'
-  }}>
-  <div className='header' style={{
-    height:'50vw',
-    display:'flex',
+    textAlign: 'center',
   }}>
   <h1> Boulder Parchment Shears </h1>
   <h2> Decide Fates </h2>
   </div>
+
+  <div className='linkBlock' style={{
+    width: '50vw',
+    height: '500px',
+  }}>
   <ul>
   <li>
-  <Link to="/"> Home </Link>
+  <Link to="/" style={{
+    color: 'white',
+    textDecoration: 'none',
+  }} > Home </Link>
   </li>
   </ul>
   </div>
+  </>
 )

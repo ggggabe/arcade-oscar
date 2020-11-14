@@ -10,7 +10,6 @@ function App() {
       alignItems: 'center',
       flexFlow: 'column wrap',
     }}>
-      <h1>ARCADE</h1>
       <Routes />
     </div>
   )
