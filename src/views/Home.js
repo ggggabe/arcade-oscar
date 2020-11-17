@@ -1,7 +1,4 @@
-import {
-  Link,
-  BrowserRouter as Router,
-} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export const Home = () => {
 
