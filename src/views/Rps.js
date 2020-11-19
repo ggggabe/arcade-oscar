@@ -25,23 +25,31 @@ export const Rps = () => {
 
   const [started,setStart] = useState(false)
   const [userWeapon,setWeapon] = useState('')
+  const [winner,setWinner] = useState('')
 
   const oscarWeapon = assignOscarWeapon()
-  console.log(oscarWeapon , userWeapon)
+  console.log(oscarWeapon, userWeapon)
 
-  switch (userWeapon) {
-    case 'rock':
-    oscarWeapon === 'paper' ? console.log('oscar wins, paper beats rock') : console.log('nada')
-    break;
-    case 'paper':
-    (oscarWeapon === 'scissors') ? console.log('oscar wins, scissors beat paper') : console.log('nada')
-    break;
-    case 'scissors':
-    (oscarWeapon === 'rock') ? console.log('oscar wins, rock beat scissors') : console.log('nada')
-    break;
-    default:
-    console.log('You win!')
+const whoWins = () => {
+  if (userWeapon) {
+    if (userWeapon === oscarWeapon){
+      console.log('tie')
+    }
+    else if (userWeapon === 'rock' && oscarWeapon != 'paper' ){
+      console.log('user wins')
+    }
+    else if  (userWeapon === 'scissors' && oscarWeapon != 'rock'){
+      console.log('user wins')
+    }
+    else if  (userWeapon === 'paper' && oscarWeapon != 'scissors'){
+      console.log('user wins')
+    }
+    else {
+      console.log('oscar wins')
+    }
   }
+  }
+  whoWins()
 
   return (
 <>
@@ -58,6 +66,11 @@ export const Rps = () => {
       <div className='bigButton' onClick={() => {setWeapon('rock')}}> Rock </div>
       <div className='bigButton' onClick={() => {setWeapon('paper')}}> Paper </div>
       <div className='bigButton' onClick={() => {setWeapon('scissors')}}> Scissors </div>
+    </>
+  }
+    {winner &&
+      <>
+      <div className='winnerContainer'> You win! </div>
     </>
   }
 
