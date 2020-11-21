@@ -8,7 +8,7 @@ export const Home = () => {
   <h2> Home </h2>
   <ul>
   <li>
-  <Link to="/rps"> Rock Paper Scissors </Link>
+  <Link to="/rps"> <button class="start"> Rock Paper Scissors </button> </Link>
   <Link to="/splash"> OSCAR </Link>
   </li>
   </ul>

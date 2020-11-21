@@ -41,6 +41,17 @@ letter-spacing: -0.055em;
   width: 100vw;
 }
 
+button{
+  select { text-transform: none; }
+    box-shadow: -26.71875px -26.71875px 53.4375px 0px rgba(255, 255, 255, 1);
+
+    box-shadow: 26.71875px 26.71875px 53.4375px 0px rgba(170, 170, 204, 0.5);
+
+    box-shadow: 13.359375px 13.359375px 26.71875px 0px rgba(170, 170, 204, 0.25);
+
+    box-shadow: -13.359375px -13.359375px 26.71875px 0px rgba(255, 255, 255, 0.5);
+}
+
 
 /* RPS */
 .bigButton {
