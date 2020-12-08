@@ -18,7 +18,6 @@ const assignOscarWeapon = () => {
 const startGame = () => {
   const oscarWeapon = assignOscarWeapon()
   console.log(oscarWeapon)
-
 }
 
 export const Rps = () => {
@@ -34,21 +33,27 @@ const whoWins = () => {
   if (userWeapon) {
     if (userWeapon === oscarWeapon){
       console.log('tie')
+      setWinner('tie')
     }
-    else if (userWeapon === 'rock' && oscarWeapon != 'paper' ){
+    else if (userWeapon === 'rock' && oscarWeapon !== 'paper' ){
       console.log('user wins')
+      setWinner('user')
     }
-    else if  (userWeapon === 'scissors' && oscarWeapon != 'rock'){
+    else if  (userWeapon === 'scissors' && oscarWeapon !== 'rock'){
       console.log('user wins')
+      setWinner('user')
     }
-    else if  (userWeapon === 'paper' && oscarWeapon != 'scissors'){
+    else if  (userWeapon === 'paper' && oscarWeapon !== 'scissors'){
       console.log('user wins')
+      setWinner('user')
     }
     else {
       console.log('oscar wins')
+      setWinner('oscar')
     }
   }
   }
+
   whoWins()
 
   return (
